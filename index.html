@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🕐 Global Time Zone Clock</h1>
+            <p>Real-time clock displaying current time across different time zones</p>
+        </header>
+
+        <div class="controls">
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="Search or add timezone (e.g., America/New_York)"
+            >
+            <button id="addBtn" class="add-btn">+ Add Timezone</button>
+        </div>
+
+        <div class="clocks-container" id="clocksContainer">
+            <!-- Clocks will be dynamically inserted here -->
+        </div>
+
+        <div class="popular-timezones">
+            <h2>Popular Time Zones</h2>
+            <div class="timezone-buttons">
+                <button class="tz-btn" data-tz="America/New_York">New York (EST)</button>
+                <button class="tz-btn" data-tz="Europe/London">London (GMT)</button>
+                <button class="tz-btn" data-tz="Europe/Paris">Paris (CET)</button>
+                <button class="tz-btn" data-tz="Asia/Tokyo">Tokyo (JST)</button>
+                <button class="tz-btn" data-tz="Asia/Shanghai">Shanghai (CST)</button>
+                <button class="tz-btn" data-tz="Australia/Sydney">Sydney (AEDT)</button>
+                <button class="tz-btn" data-tz="Asia/Dubai">Dubai (GST)</button>
+                <button class="tz-btn" data-tz="Asia/Kolkata">India (IST)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
